@@ -27,7 +27,7 @@ samples/               # test images
 Python 3.10 or newer.
 
 ```bash
-git clone https://github.com/<your-username>/multimodel-async-server.git
+git clone https://github.com/LoveCter/Multi-model-async-server.git
 cd multimodel-async-server
 python3 -m venv .venv
 source .venv/bin/activate
