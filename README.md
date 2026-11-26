@@ -137,15 +137,6 @@ docker run --rm -p 8000:8000 -v "$env:USERPROFILE\.cache\huggingface:/root/.cach
 - A single worker processes jobs one by one, so a fast job waits behind a slow one.
 - `callback_url` is not validated, so do not expose this server to the internet.
 
-## Experiments to try
-
-1. One worker per model, compared on `job_total` with the single-worker version.
-2. `LOAD_MODE=lazy` against `eager` on the first request.
-3. A maximum queue length that returns `429` when full.
-
 ## Credits
-
-Based on parts 02 (async jobs), 03 (multi-model server) and 04 (load testing) of
-[dangnha/vqa-deployment-in-production](https://github.com/dangnha/vqa-deployment-in-production).
 
 The COCO sample image comes from the COCO 2017 validation set (https://cocodataset.org), under a Creative Commons license.
